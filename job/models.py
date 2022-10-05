@@ -1,3 +1,4 @@
+from operator import mod
 from django.db import models
 from django.utils.text import slugify
 
@@ -45,6 +46,24 @@ class Job(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return str(self.name)
+
+
+class Apply(models.Model):
+    
+    def cv_upload(instance, filename):
+        fname, extension = filename.split(".")
+        name = instance.name.replace(' ', '_')
+        return "apply/%s.%s"%(name, extension)
+    job = models.ForeignKey(Job, related_name='apply_job', on_delete=models.CASCADE)
+    name = models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)
+    website = models.URLField()
+    cv = models.FileField(upload_to=cv_upload)
+    cover_letter = models.TextField(max_length=500)
+    created_at = models.DateTimeField(auto_now=True)
     
     def __str__(self):
         return str(self.name)
