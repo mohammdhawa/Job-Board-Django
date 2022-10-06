@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    {% comment %} <h3>4536+ Jobs Available</h3> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="job_details_area">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+            <div class="col-6">
+                
+                <div class="text-center">
+                    <ul>
+                        <li><img src="{{profile.image.url}}" class="rounded-circle" width="400" height="400" /></li>
+                    </ul>
+                    <br>
+                    <ul >
+                        <li>Username: {{profile}}</li>
+                        <li>Name: {{profile.user.first_name}} {{profile.user.last_name}}</li>
+                        <li>Email: {{profile.user.email}}</li>
+                        <li>Phone Number: {{profile.phone_number}}</li>
+                        <li>Address: Turkey / {{profile.city}}</li>
+                    </ul>
+                </div>
+                <div class="col-11 mx-auto p-4">
+                    <a href="{% url 'accounts:edit' %}" class="boxed-btn3 w-100">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock content %}
+    
