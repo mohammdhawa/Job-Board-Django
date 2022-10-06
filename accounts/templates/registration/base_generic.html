@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    {% comment %} <h3>4536+ Jobs Available</h3> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ bradcam_area  --> 
+
+<div class="job_details_area">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+            <div class="col-10">
+                
+                <div class="apply_job_form white-bg">
+                    
+                    {% block body %}
+                        
+                    {% endblock body %}
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
