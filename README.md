@@ -56,5 +56,5 @@ This is a Django web application for managing job listings.
 
 ---
 
-c
+
 ![](./static/img/1.png)
