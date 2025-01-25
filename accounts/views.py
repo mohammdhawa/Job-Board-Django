@@ -3,6 +3,7 @@ from .forms import SignupForm, UserForm, ProfileForm
 from django.contrib.auth import authenticate, login
 from .models import Profile
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -15,7 +16,8 @@ def signup(request):
 
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
-            user = authenticate(username=username, passwrod=password)
+
+            user = authenticate(username=username, password=password)
             login(request, user)
             return redirect('/accounts/profile')
     else:

@@ -9,7 +9,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phone_number = models.CharField(max_length=15)
     city = models.ForeignKey('City', related_name="user_city", on_delete=models.SET_NULL, null=True, blank=True)
-    image = models.ImageField(upload_to='profile/')
+    image = models.ImageField(upload_to='profile/', default='profile/default.jpg')
     
     def __str__(self):
         return str(self.user)

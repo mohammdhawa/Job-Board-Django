@@ -6,3 +6,5 @@ django.setup()
 
 from faker import Faker
 from job.models import Job
+import random
+
