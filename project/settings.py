@@ -43,10 +43,7 @@ INSTALLED_APPS = [
     
     # Apps 
     'job',
-    
-    'blog',
     'contact',
-    'home',
     
     # bootsrap 
     "bootstrap5",
