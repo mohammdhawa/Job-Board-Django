@@ -23,7 +23,8 @@ class Job(models.Model):
     
     owner = models.ForeignKey(User, related_name='job_owner', on_delete=models.CASCADE)
     title = models.CharField(max_length=100) # column
-    # location = 
+    country = models.ForeignKey('cities_light.Country', related_name="job_country", on_delete=models.SET_NULL, null=True, blank=True)
+    city = models.ForeignKey('cities_light.City', related_name="job_city", on_delete=models.SET_NULL, null=True, blank=True)
     job_type = models.CharField(max_length=20, choices=JOBTYPE)
     description = models.TextField(max_length=1000)
     published_at = models.DateTimeField(auto_now=True)
