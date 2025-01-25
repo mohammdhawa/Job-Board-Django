@@ -9,16 +9,17 @@ from .filters import JobFilter
 # Create your views here.
 def job_list(request):
     jobs = Job.objects.all()
+    jobs_count = jobs.count()
     
     # Filters 
     myfilter = JobFilter(request.GET, queryset=jobs)
     jobs = myfilter.qs
     
-    paginator = Paginator(jobs, 4)
+    paginator = Paginator(jobs, 25)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     
-    context = {'jobs': page_obj, 'myfilter': myfilter}
+    context = {'jobs': page_obj, 'myfilter': myfilter, 'jobs_count': jobs_count}
     return render(request, 'job/job_list.html', context)
 
 
