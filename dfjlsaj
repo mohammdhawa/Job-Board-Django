@@ -1,0 +1,179 @@
+[33mcommit d533bbcdc591bc19b9b174045bd85b98000373c0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 23:00:09 2025 +0300
+
+    add singup api
+
+[33mcommit 030b744f9a265f64110b8af47beec0741dc29050[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 22:46:30 2025 +0300
+
+    add ApplyJobSerializer and implement it in JobDetailAPI
+
+[33mcommit c2f24a9126994d848a9c67791a4f7814741247c2[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 17:28:52 2025 +0300
+
+    add JobAPI and JobDetailAPI
+
+[33mcommit 40d0929f9f1c40b3cb7731dfb01458f966b7bc74[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 16:13:56 2025 +0300
+
+    delete home and blog apps because are needless
+
+[33mcommit 31b9d0fe7682de62137168d8f74540f28a4774ae[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 16:11:47 2025 +0300
+
+    customize the profile page
+
+[33mcommit 385ee7cfaa91a3aad28d5674670054271537bc86[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 15:08:47 2025 +0300
+
+    edit on contact page
+
+[33mcommit 2961b51447b7672535c87c39844569ea43747b25[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 14:58:15 2025 +0300
+
+    fix bug in pagination
+
+[33mcommit dba84cb062eed800367c798afa0a94cb9eb40b90[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 14:41:02 2025 +0300
+
+    added dummy data for testing project efficiency
+
+[33mcommit eaeab9ca94a86bb3c85cb07d5549880686172b13[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 06:56:30 2025 +0300
+
+    solved debug in signup
+
+[33mcommit 8ea7650a2ac4fa97390b525385c03ac8ab27ec93[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 05:56:06 2025 +0300
+
+    add signup to the header
+
+[33mcommit 63c25454f1c6e449f19a73608cd5b683a39db8c0[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 05:36:54 2025 +0300
+
+    delete the country field in Job model because it is needless
+
+[33mcommit 7f07e0cf083f42079194e7cbe435019a9ee0613e[m
+Author: Muhammed Recep Hava <66217824+mohammdhawa@users.noreply.github.com>
+Date:   Sat Jan 25 05:32:12 2025 +0300
+
+    edit on job model by adding country and city fields
+
+[33mcommit aeccfe1569d3d8c00e11eed15537fe0f0acee661[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: mohammdhawa <ragab5434@gmail.com>
+Date:   Mon Dec 18 00:52:57 2023 +0300
+
+    add requirements.txt
+
+[33mcommit afc46547bd6630e693fb5bc74ce3658e48cc0899[m
+Author: Muhammed Recep Hava <ragab5434@gmail.com>
+Date:   Tue Dec 5 15:17:58 2023 +0300
+
+    edites on readme file
+
+[33mcommit 29c9c240dc55d6d2e6b1cc25195c09e3b55e5054[m
+Author: Muhammed Recep Hava <ragab5434@gmail.com>
+Date:   Tue Dec 5 15:17:33 2023 +0300
+
+    edites on readme file
+
+[33mcommit fdbbab8deaa468d21ddaf40f26c9ec7963d74b86[m
+Author: Muhammed Recep Hava <ragab5434@gmail.com>
+Date:   Tue Dec 5 15:14:08 2023 +0300
+
+    edites on readme file
+
+[33mcommit eb591c2c303c498c57da3f14554614769fa3f34c[m
+Author: Muhammed Recep Hava <ragab5434@gmail.com>
+Date:   Tue Dec 5 15:11:47 2023 +0300
+
+    edites on readme file
+
+[33mcommit 16a0aaeb67b86f5c2a33f4af4f73f4456cd1c5c1[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Fri Oct 7 16:47:16 2022 +0300
+
+    end
+
+[33mcommit 7760ca90326a7c8095c505546790d0228a1c830b[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Thu Oct 6 21:26:13 2022 +0300
+
+    added profile and user forms
+
+[33mcommit 0055acd25fac46237d47348d9d6e635bb4687b01[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Thu Oct 6 17:05:18 2022 +0300
+
+    added user authentiactions and profile
+
+[33mcommit 3b82ecf0843297f7d292e7d46ff563d671da5bcb[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Wed Oct 5 22:12:32 2022 +0300
+
+    added form to apply on job
+
+[33mcommit 8c5ca3b891852c2a16b21c8dc2b40975e991a45b[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Wed Oct 5 16:49:13 2022 +0300
+
+    adding slug instead of id
+
+[33mcommit 531ad61b0fbd96bdc4dd95d7df695fa4c30178fa[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Wed Oct 5 16:32:06 2022 +0300
+
+    Editting pagination
+
+[33mcommit 89b7a7e01379338d94367c78c5a6711f0199c297[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Wed Oct 5 03:00:45 2022 +0300
+
+    edit front-end
+
+[33mcommit 61205c5ec0b67c056e796864f898d88a7005182b[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Tue Oct 4 21:41:54 2022 +0300
+
+    Media files added
+
+[33mcommit 4070f487c012bfc828d2c36f03a8809e29f32949[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Tue Oct 4 21:15:39 2022 +0300
+
+    added front-end
+
+[33mcommit cc46c7a6113b39b547352339303e0292c84fd549[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Tue Oct 4 21:11:41 2022 +0300
+
+    edited the settings and adding templates and statid files
+
+[33mcommit 6e9db5765f26ecafd08871b349fcea32a703313b[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Tue Oct 4 21:08:30 2022 +0300
+
+    builded the structure of database job and category
+
+[33mcommit f11fd2b2803adefa5bce2bf7bd0ebb67dedeb8f9[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Tue Oct 4 20:53:17 2022 +0300
+
+    creat apps and mapping urls of job
+
+[33mcommit 2de44e98a31a2d37e9bb06bb58c18abd6e74d623[m
+Author: hawa <ragab5434@gmail.com>
+Date:   Tue Oct 4 20:47:18 2022 +0300
+
+    first commit

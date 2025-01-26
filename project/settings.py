@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     
     # bootsrap 
     "bootstrap5",
+    'rest_framework.authtoken',
 
     # Packages
     'django_filters',
@@ -134,12 +135,12 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    Path.joinpath(BASE_DIR, 'static'),
+    BASE_DIR / "static",
 ]
 
 MEDIA_URL = 'media/'
 
-MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -150,4 +151,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 GRAPH_MODELS = {
   'all_applications': True,
   'group_models': True,
+}
+
+# Rest Framework Settings
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
 }

@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from .models import Profile
+from .models import City
 
 
 class SignupSerializer(serializers.ModelSerializer):
@@ -29,3 +31,35 @@ class SignupSerializer(serializers.ModelSerializer):
         account.save()
 
         return account
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password')
+        extra_kwargs = {'password': {'write_only': True}}
+
+
+class ChangableUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('first_name', 'last_name', 'email')
+
+    def validatate_email(self, email):
+        if '@' not in email or '.' not in email:
+            raise serializers.ValidationError({'email': 'Invalid email address.'})
+        return email
+
+
+class CitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = City
+        fields = ['name']
+
+class ProfileSerializer(serializers.ModelSerializer):
+    user = ChangableUserSerializer()
+    city = CitySerializer()
+    class Meta:
+        model = Profile
+        fields = ['user', 'phone_number', 'city', 'image']
+        
