@@ -3,58 +3,120 @@
 This is a Django web application for managing job listings.
 
 ## Database:
+# Job Board - Django
 
-1. ### Job Table:
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Django](https://img.shields.io/badge/Django-3.2-brightgreen.svg)](https://www.djangoproject.com/)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 
-   - `owner`: linking to the User model, representing the owner of the job.
-   - `title`: for the job title.
-   - `job_type`: with choices for job types (full time or part time).
-   - `description`: for the job description.
-   - `published_at`: DateTimeField representing the date and time the job was published.
-   - `vacancy`:  for the number of vacancies.
-   - `salary`: for the job salary.
-   - `experience`: for required experience.
-   - `category`: linking to the Category model, representing the job category.
-   - `image`: uploading an image related to the job.
-   - `slug`: for a URL-friendly version of the title.
+A full-featured job board web application built with Django, designed to connect employers with job seekers. This platform allows companies to post job opportunities while enabling candidates to search and apply for positions seamlessly.
 
-2. ### Category Table:
+![Job Board Screenshot](screenshots/homepage.png) <!-- Add actual screenshot path -->
 
-   `name`: for the category name.
+## Features
 
-3. ### Apply Table:
+- **Job Listings Management**
+  - Create, edit, and delete job postings
+  - Filter jobs by category, location, and job type
+  - Search functionality with keyword matching
+- **User Authentication**
+  - Separate registration flows for employers and job seekers
+  - Email verification for new accounts
+  - Password reset functionality
+- **Application System**
+  - Candidates can submit applications with resumes/CVs
+  - Employers can review applications in dashboard
+- **Company Profiles**
+  - Create and manage company profiles
+  - Display company information and posted jobs
+- **Admin Interface**
+  - Comprehensive Django admin panel
+  - Moderate job postings and user accounts
+  - Analytics and statistics dashboard
 
-   - `job`: linking to the Job model, representing the job to which the application is submitted.
-   - `name`: for the applicant's name.
-   - `email`: for the applicant's email.
-   - `website`: for the applicant's website.
-   - `cv`: for uploading the applicant's CV.
-   - `cover_letter`: for the applicant's cover letter.
-   - `created_at`: representing the date and time the application was created.
+## Technologies Used
 
-4. ### Info Table:
+- **Backend**: Django 3.2, RestFramework
+- **Frontend**: Bootstrap 5, HTML5, CSS3
+- **Database**: SQLite (Development), PostgreSQL (Production)
+- **Authentication**: Django Allauth
+- **File Storage**: Django-Storages (AWS S3 compatible)
+- **Additional Packages**:
+  - Django Crispy Forms
+  - Django Filter
+  - Pillow (Image processing)
 
-   - `place`: for the location or place associated with the contact information.
-   - `phone_number`: for the phone number.
-   - `email`: for the contact email.
+## Installation
 
-## Main Operations:
+Follow these steps to set up the project locally:
 
-1. **job_list:**
-   - Fetches all jobs, applies filters if any, and paginates the results.
-2. **job_detail:**
-   - Fetches a specific job based on the slug.
-   - Handles form submissions for job applications.
-3. **add_job:**
-   - Requires user authentication.
-   - Handles form submissions for adding new jobs.
-   - Associates the job with the current user as the owner.
-   - Redirects to the job list after a successful job addition.
+1. **Clone the repository**
 
-4. **send_message:**
-   - Retrieves the latest (last) Info object from the database.
+   ```bash
+   git clone https://github.com/mohammdhawa/Job-Board-Django.git
+   cd Job-Board-Django
+   ```
 
----
+2. **Set up virtual environment**
 
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run migrations**
+
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Create superuser**
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+6. **Run development server**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+Visit `http://localhost:8000` in your browser to access the application.
+
+## Screenshots
 ![](./static/img/1.png)
+
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+Please ensure your code follows PEP8 standards and includes proper documentation.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Mohammad Hawa - [GitHub Profile](https://github.com/mohammdhawa)
+Project Link: https://github.com/mohammdhawa/Job-Board-Django
+
+## Acknowledgments
+
+- Django Documentation
+- Bootstrap Community
+- Inspired by modern job board platforms
