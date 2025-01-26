@@ -11,7 +11,7 @@ This is a Django web application for managing job listings.
 
 A full-featured job board web application built with Django, designed to connect employers with job seekers. This platform allows companies to post job opportunities while enabling candidates to search and apply for positions seamlessly.
 
-![Job Board Screenshot](screenshots/homepage.png) <!-- Add actual screenshot path -->
+![Job Board Screenshot](./static/img/1.png) <!-- Add actual screenshot path -->
 
 ## Features
 
@@ -91,7 +91,7 @@ Follow these steps to set up the project locally:
 Visit `http://localhost:8000` in your browser to access the application.
 
 ## Screenshots
-![](./static/img/1.png)
+![](./static/img/apply_job.png)
 
 
 ## Contributing
